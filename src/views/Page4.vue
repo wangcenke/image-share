@@ -2,14 +2,14 @@
  * @Author: wangcenke
  * @Date: 2021-06-10 09:58:50
  * @LastEditors: wangcenke
- * @LastEditTime: 2021-06-16 15:39:40
+ * @LastEditTime: 2021-06-20 11:15:10
  * @Description:
 -->
 <template>
   <div class="card">
     <h1>page4</h1>
     <p @click="add">{{ count }}</p>
-    <el-button @click="toPage3">to page3</el-button>
+    <button @click="toPage3">to page3</button>
     <p>1</p>
     <p>1</p>
     <p>1</p>
@@ -58,7 +58,7 @@
 import { computed, defineComponent, watch } from "vue";
 import { useRoute, useRouter } from "vue-router";
 import { mapActions, mapState, useStore } from "vuex";
-import { Message, Msgbox } from "element3";
+// import { Message, Msgbox } from "element3";
 export default defineComponent({
   name: "page4",
   //   computed: {

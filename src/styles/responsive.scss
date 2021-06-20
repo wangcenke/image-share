@@ -2,7 +2,7 @@
  * @Author: wangcenke
  * @Date: 2021-05-28 16:11:11
  * @LastEditors: wangcenke
- * @LastEditTime: 2021-06-10 21:47:26
+ * @LastEditTime: 2021-06-20 15:45:01
  * @Description: // 响应式布局 https://juejin.cn/post/6844903814332432397 https://juejin.cn/post/6844903729007689736
  */
 @use "sass:math";
@@ -139,12 +139,7 @@ $colPadding: 0 0.15rem;
     }
 }
 
-// container
-.container {
-    padding-top: $headHeight + 20;
-    max-width: $container;
-    margin: 0 auto;
-}
+
 @media screen and (max-width: 425px) {
     .container {
         padding-top: 1rem;

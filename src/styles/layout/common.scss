@@ -1,13 +1,33 @@
 @import "../variables.module.scss";
 
+// container
+.container {
+    // max-width: $container;
+    margin: 0 auto;
+    padding: 0 20px;
+    padding-top: 20px;
 
-
-.card {
-    margin-top: 0.15rem;
-    padding: 0.15rem;
-    background-color: $bgc;
-    border-radius: 0.05rem;
-    // &:first-child {
-    //     margin-top: 0;
-    // }
 }
+
+.card-list {
+    column-count: var(--column-count);
+    column-gap: 10px;
+    .card-item {
+        // border: 1px solid #999;
+        margin-bottom: 10px;
+        break-inside: avoid;
+        img {
+            width: 100%;
+        }
+    }
+}
+// 图片预览 vue-photo-preview
+// .card {
+//     margin-top: 0.15rem;
+//     padding: 0.15rem;
+//     background-color: $bgc;
+//     border-radius: 0.05rem;
+//     // &:first-child {
+//     //     margin-top: 0;
+//     // }
+// }

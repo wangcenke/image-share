@@ -6,7 +6,7 @@ import store from "./store";
 
 // 全局样式
 import "styles/index.scss";
-
+import VueLazyLoad from "vue3-lazyload";
 import element3 from "plugins/element3.js";
 
 const app = createApp(App);
@@ -19,5 +19,7 @@ if (process.env.NODE_ENV === "development") {
   // }
   app.config.devtools = true;
 }
-
+app.use(VueLazyLoad, {
+  log: false
+})
 app.use(router).use(store).use(element3).mount("#app");

@@ -1,21 +1,27 @@
-<!--
- * @Author: wangcenke
- * @Date: 2021-06-10 10:45:03
- * @LastEditors: wangcenke
- * @LastEditTime: 2021-06-10 13:46:55
- * @Description: 
--->
+<!-- https://www.npmjs.com/package/vue3-lazyload -->
 <template>
-  <div class="card">
-    <slot></slot>
+  <div class="card-item" ref="item">
+    <img v-lazy="{src: src, lifecycle: lazyOptions.lifecycle}" />
   </div>
 </template>
 
-<script>
-export default {
-  name: "CardItem",
-  setup() {
-    return {};
-  },
-};
+<script setup>
+import { defineProps, reactive } from "@vue/runtime-core";
+defineProps({
+  src: String,
+});
+const lazyOptions = reactive({
+  log: false,
+  lifecycle: {
+        loading: () => {
+          console.log('image loading')
+        },
+        error: () => {
+          console.log('image error')
+        },
+        loaded: () => {
+          console.log('image loaded!!')
+        }
+      }
+})
 </script>

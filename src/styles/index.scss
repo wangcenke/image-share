@@ -4,7 +4,7 @@
 @import "./element-ui.scss"; // 覆盖样式
 @import "./layout/index.scss";
 @import "./layout/header.scss";
-@import "./responsive.scss"; // 自定义响应式 放在最后引入，以免样式不生效
+// @import "./responsive.scss"; // 自定义响应式 放在最后引入，以免样式不生效
 
 // @import "./sidebar.scss";
 
@@ -36,7 +36,7 @@ html {
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
+  box-sizing: border-box;
   margin: 0;
 }
 
@@ -72,5 +72,3 @@ div:focus {
 .app-container {
   padding: 20px;
 }
-
-// https://blog.skk.moe/ 博客样式 pc一个样式，手机一个样式

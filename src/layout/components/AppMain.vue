@@ -20,7 +20,7 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @import "styles/variables.module.scss";
 .app-main {
   /*50 = navbar  */

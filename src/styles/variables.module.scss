@@ -11,21 +11,18 @@ $subMenuHover: #001528;
 
 $sideBarWidth: 210px;
 
-// blog var
+// 
 $container: 1440px;
-$headHeight: 60px;
-$bgc: rgba(37, 45, 56, 1); //background color
-$mbgc: rgba(24, 28, 39, 1); //main background color
+$headHeight: 66px;
+$bgc: rgba(36, 42, 54, 1); //background color
+$mbgc: rgba(255, 255, 255, 1); //main background color
 
-// the :export directive is the magic sauce for webpack
-// https://www.bluematador.com/blog/how-to-share-variables-between-js-and-sass
-:export {
-  menuText: $menuText;
-  menuActiveText: $menuActiveText;
-  subMenuActiveText: $subMenuActiveText;
-  menuBg: $menuBg;
-  menuHover: $menuHover;
-  subMenuBg: $subMenuBg;
-  subMenuHover: $subMenuHover;
-  sideBarWidth: $sideBarWidth;
+// 决定使用css变量
+:root {
+  --height-head: 66px;
+  --width-container: 1440px;
+  --column-count: 4;
+  --color-background: rgba(36, 42, 54, 1);
+  --color-background-main: rgba(255, 255, 255, 1);
 }
+
