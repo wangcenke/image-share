@@ -1,0 +1,40 @@
+{
+  "name": "vue3-template",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "dev:dev": "cross-env NODE_ENV=development vite",
+    "lint": "eslint \"src/**/*.{js,vue}\" --fix",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "bulma": "^0.9.2",
+    "dotenv": "^10.0.0",
+    "element3": "^0.0.40",
+    "js-cookie": "^2.2.1",
+    "mockjs": "^1.1.0",
+    "vue": "^3.0.5",
+    "vue-router": "^4.0.4",
+    "vuex": "^4.0.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^1.1.4",
+    "@vue/compiler-sfc": "^3.0.5",
+    "autoprefixer": "^10.2.5",
+    "cross-env": "^7.0.3",
+    "eslint": "^7.28.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "eslint-plugin-vue": "^7.10.0",
+    "prettier": "^2.3.1",
+    "sass": "^1.32.8",
+    "vite": "^2.0.1",
+    "vite-plugin-mock": "^2.5.0"
+  }
+}

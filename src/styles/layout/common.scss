@@ -1,0 +1,13 @@
+@import "../variables.module.scss";
+
+
+
+.card {
+    margin-top: 0.15rem;
+    padding: 0.15rem;
+    background-color: $bgc;
+    border-radius: 0.05rem;
+    // &:first-child {
+    //     margin-top: 0;
+    // }
+}

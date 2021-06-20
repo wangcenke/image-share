@@ -1,0 +1,70 @@
+@import "styles/mixin.scss";
+@import "styles/variables.module.scss";
+
+@mixin headPadding {
+  padding: 0.1rem;
+}
+@mixin flexCommon {
+  align-items: stretch;
+  display: flex;
+  flex-shrink: 0;
+}
+
+
+.header {
+  @include alignCenter;
+  margin: 0 auto;
+  max-width: $container;
+  height: $headHeight;
+  padding: 0 0.2rem;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 1px 4px rgba(0, 21, 41, 0.08);
+  background-color: $bgc;
+}
+.logo-wrap {
+  display: flex;
+  margin-right: 0.1rem;
+  a {
+    @include alignCenter;
+    @include headPadding;
+    img {
+      width: 0.25rem;
+      height: 0.25rem;
+      border-radius: 50%;
+    }
+    h1 {
+      margin: 0;
+      margin-left: 0.05rem;
+      font-size: 0.16rem;
+      color: rgba($color: #fff, $alpha: 0.8);
+    }
+  }
+}
+
+.navbar {
+  @include flexCommon;
+  justify-content: center;
+  flex-grow: 1;
+  &-left,
+  &-right {
+    @include flexCommon;
+  }
+  &-left {
+    margin-right: auto;
+    justify-content: flex-start;
+  }
+  &-right {
+    justify-content: flex-end;
+  }
+  &-item {
+    @include headPadding;
+    align-items: center;
+    color: rgba($color: #fff, $alpha: 0.8);
+    display: flex;
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin: 0;
+    font-size: 0.16rem;
+  }
+}

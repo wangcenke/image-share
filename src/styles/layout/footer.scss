@@ -1,0 +1,14 @@
+@import "styles/variables.module.scss";
+.footer {
+    margin-top: .2rem;
+    padding: .4rem .5rem .8rem;
+    font-size: .16rem;
+    color: rgba($color: #fff, $alpha: .9);
+    background-color: $bgc;
+    &-container {
+        margin: 0 auto;
+        max-width: $container;
+        display: flex;
+        justify-content: space-between;
+    }
+}
